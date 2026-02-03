@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Panier</title>
+<link rel="stylesheet" href="../style/style.css">
+</head>
+<body>
+
+<header>
+<div class="logo">SmartShop</div>
+<nav>
+    <a href="../index.html">Accueil</a>
+    <a href="produits.html">Produits</a>
+    <a href="apropos.html">À propos</a>
+    <a href="contact.html">Contact</a>
+    <a href="connexion.html">Connexion</a>
+    <a href="inscription.html">Inscription</a>
+    <a href="panier.html" class="panier-btn">Panier</a>
+</nav>
+
+</header>
+
+<section class="panier">
+<table>
+<thead>
+<tr>
+<th>Produit</th>
+<th>Prix</th>
+<th>Quantité</th>
+<th>Sous-total</th>
+<th>Action</th>
+</tr>
+</thead>
+<tbody id="panier-body">
+<tr>
+<td>Souris sans fil M500</td>
+<td class="prix">1500</td>
+<td><input type="number" value="1" min="1" onchange="calculerTotal()"></td>
+<td class="soustotal">1500 DA</td>
+<td class="supprimer" onclick="supprimerProduit(this)">X</td>
+</tr>
+</tbody>
+</table>
+
+<div style="text-align:right;margin-top:20px;">
+Total : <strong id="total">1500 DA</strong>
+</div>
+</section>
+
+<footer>
+<p>© 2025 SmartShop</p>
+</footer>
+
+<script src="../javascript/main.js"></script>
+</body>
+</html>
