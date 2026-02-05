@@ -109,7 +109,7 @@ header nav a.panier-btn {
 }
 
 .produit img {
-    width: 70%;
+    width: 100%;
     border-radius: 10px;
     margin-bottom: 10px;
 }
@@ -283,3 +283,4 @@ footer {
         flex-direction: column;
     }
 }
+
